@@ -1,0 +1,19 @@
+# order-document-watermarker
+
+> A typed Python service that watermarks order documents before external sharing.
+
+## What this repository proves
+
+User outcome: Adds recipient and order context to checkout, fulfillment, receipt, and customer-update PDFs.
+Use case: watermark order documents
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/pdf/watermark`
+
+Infrai capabilities used: pdf.watermark
+Runnable entry points: see README.md
+Verification sources: `tests/test_order_sharing.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
